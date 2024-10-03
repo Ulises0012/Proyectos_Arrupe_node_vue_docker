@@ -1,0 +1,27 @@
+<%- include("../header"); %>
+
+<div class="col-12">
+    <h1>Editar Producto</h1>
+    <form method="post" action="/productos/actualizar">
+
+        <input value="<%= producto.id %>" name="id" type="hidden">
+        <div class="form-group">
+            <label for="nombre">Nombre</label>
+            <input value="<%= producto.nombre %>" required id="nombre" placeholder="Nombre del porducto" class="form-control" type="text" name="nombre">
+        </div>
+        <div class="form-group">
+            <label for="cantidad">Cantidad</label>
+            <input value="<%= producto.cantidad %>" required id="cantidad" placeholder="Cantidad del producto" class="form-control" type="number" name="cantidad">
+        </div>
+        <div class="form-group">
+            <label for="precio">Precio</label>
+            <input value="<%= producto.precio %>" required id="precio" placeholder="Precio del producto"pattern="[0-9]+([\.][0-9]+)?" class="form-control" type="text" name="precio">
+        </div>
+        <div class="form-group">
+            <button class="btn btn-success">Guardar</button>
+            &nbsp;<a href="/productos" class="btn btn-primary">Volver</a>
+        </div>
+    </form>
+</div>
+
+<%- include("../footer"); %>

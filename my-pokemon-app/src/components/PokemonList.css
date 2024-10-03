@@ -1,0 +1,119 @@
+/* PokemonList.css */
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #8B0000;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    
+}
+
+.pokedex-container {
+    background-color: #FF0000;
+    border: 10px solid #000;
+    border-radius: 10px;
+    width: 500px;
+    height: 500px;
+    padding: 20px;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+    position: relative;
+}
+
+.screen {
+    background-color: #FFFFFF;
+    border: 5px solid #000;
+    border-radius: 5px;
+    width: 250px;
+    height: 350px;
+    margin: 0 auto;
+    padding: 10px;
+    text-align: center;
+    color: #000;
+
+}
+
+.pokemon-name {
+    font-size: 24px;
+    font-weight: bold;
+    margin-top: 10px;
+}
+
+.pokemon-stats {
+    text-align: left;
+    margin-top: 10px;
+}
+
+.pokemon-stats div {
+    margin-bottom: 5px;
+}
+
+.pokemon-image {
+    width: 100px;
+    height: 100px;
+    object-fit: cover;
+    margin-top: 10px;
+}
+
+.controls {
+    position: absolute;
+    bottom: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+    display: flex;
+    justify-content: space-between;
+    width: 80%;
+}
+
+.button {
+    background-color: #FFD700;
+    border: 2px solid #000;
+    border-radius: 5px;
+    padding: 10px;
+    cursor: pointer;
+    text-align: center;
+}
+
+.button:disabled {
+    background-color: #555;
+    cursor: not-allowed;
+}
+
+.search-bar {
+    background-color: #FFFF00;
+    border: 2px solid #000;
+    border-radius: 5px;
+    padding: 10px;
+    width: calc(100% - 40px);
+    margin: 20px auto;
+    display: block;
+    box-sizing: border-box;
+    color: #000;
+}
+
+.indicators {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+}
+
+.indicator {
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    margin-right: 5px;
+}
+
+.red-indicator {
+    background-color: red;
+}
+
+.yellow-indicator {
+    background-color: yellow;
+}
+
+.green-indicator {
+    background-color: green;
+}

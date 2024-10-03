@@ -1,0 +1,37 @@
+/* Estilos para centrar el contenido */
+.app-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+}
+
+.header {
+  background-color: #333;
+  color: #fff;
+  padding: 1rem;
+  text-align: center;
+  width: 100%;
+}
+
+.main-content {
+  width: 100%;
+  max-width: 1200px;
+  padding: 2rem;
+}
+
+/* Estilos para las cartas de productos */
+.card {
+  text-align: center;
+}
+
+.card-img-top {
+  height: 150px;
+  object-fit: cover;
+}
+
+/* Estilos para la tabla del carrito */
+.table {
+  text-align: center;
+}
