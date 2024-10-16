@@ -1,0 +1,92 @@
+/* frontend/src/components/ProfesorCrud.css */
+.profesor-crud-container {
+  width: 80%;
+  margin: 0 auto;
+  padding: 20px;
+  background-color: #f9f9f9;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.profesor-crud-container h1 {
+  font-size: 24px;
+  color: #333;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.profesor-table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-bottom: 20px;
+}
+
+.profesor-table table {
+  width: 100%;
+}
+
+.profesor-table th,
+.profesor-table td {
+  padding: 10px;
+  text-align: left;
+  border-bottom: 1px solid #ddd;
+}
+
+.profesor-table th {
+  background-color: #f0f0f0;
+  color: #555;
+}
+
+.profesor-table td {
+  color: #444;
+}
+
+.profesor-table td button {
+  padding: 8px 12px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.edit-btn {
+  background-color: #4caf50;
+  color: white;
+  margin-right: 10px;
+}
+
+.delete-btn {
+  background-color: #f44336;
+  color: white;
+}
+
+.add-btn {
+  background-color: #2196f3;
+  color: white;
+  padding: 10px 20px;
+  border-radius: 5px;
+  font-size: 16px;
+  display: block;
+  margin: 20px auto;
+}
+
+.add-btn:hover,
+.edit-btn:hover,
+.delete-btn:hover {
+  opacity: 0.9;
+}
+
+@media (max-width: 768px) {
+  .profesor-crud-container {
+    width: 100%;
+    padding: 10px;
+  }
+
+  .profesor-table th, .profesor-table td {
+    padding: 8px;
+  }
+
+  .add-btn {
+    width: 100%;
+    margin: 10px 0;
+  }
+}
